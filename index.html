@@ -1,0 +1,74 @@
+<head>  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Honk&display=swap" rel="stylesheet">
+</head>
+<script>
+
+function setup() {
+  createCanvas(500, 300);
+	
+  background(73, 185, 233);
+  textFont("Honk",10);
+  
+  
+  fill(252, 76, 76)
+  rect(30, 30, 430 ,230)
+  fill(214,248,214)
+  rect(70, 70, 350 ,150)
+  textSize(60);
+    text('OMJI', 200, 125, 90, 60);
+  line(30,30,70,70)
+  line(30,260,70,220)
+  line(460,30,420,70)
+  line(460,260,420,220)
+  
+  
+
+  
+  	
+}
+  var moveX=205;
+  var moveY=125;
+  
+  function draw() {
+  
+   frameRate(10)
+     moveX=random(50,300);
+    moveY=random(50,200);
+    if (frameCount==10) {
+    	 moveX=170;
+      moveY=120;
+    }
+   if (frameCount >=10) {
+    
+    	noLoop(); // stops draw() after 5 frames
+  }
+    createCanvas(500, 300);
+	
+  background(73, 185, 233);
+  textFont("Honk",10);
+  
+  
+  fill(252, 76, 76)
+  rect(30, 30, 430 ,230)
+  fill(214,248,214)
+  rect(70, 70, 350 ,150)
+  textSize(60);
+   
+   
+ 
+   text('OMJI', moveX, moveY, 90, 90);
+  line(30,30,70,70)
+  line(30,260,70,220)
+  line(460,30,420,70)
+  line(460,260,420,220)
+  
+  }
+
+</script>
+
+
+<script 
+src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/p5.min.js"></script>
+
